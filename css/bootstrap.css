@@ -4027,6 +4027,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+    border-top: 1px solid;
 }
 .nav > li > a {
   position: relative;
@@ -4323,8 +4324,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'walbaumoriginalbold';
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4637,11 +4639,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #262626;
+  border-color: #262626;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: #fff;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4663,8 +4665,25 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #080808;
+  background-color: #27a9e3;
 }
+
+.selected {
+  border-color: transparent #F1F3FA transparent transparent;
+  display: block;
+  background-image: none;
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 12px;
+  background: none;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #F1F3FA;
+}
+
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
@@ -4742,8 +4761,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #f5f5f5;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 0;
 }
 .breadcrumb > li {
   display: inline-block;
