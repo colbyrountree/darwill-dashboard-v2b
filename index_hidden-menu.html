@@ -37,7 +37,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" class="toggled-off">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -153,32 +153,31 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" >
-                <div id="side-navigation">
-                <ul class="nav navbar-nav side-nav">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav toggled-off">
                     <li class="home">
-                        <a href="#" id="menu-toggle"><i class="fa fa-fw fa-bars"></i> Toggle Meu</a></span>
+                        <a href="#"><i  class="fa fa-fw fa-bars toggled-off"></i> Toggle Meu</a><span    ></span>
                     </li>
                     <li class="active">
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
+                        <a href="#"><i class="fa fa-fw fa-dashboard toggled-off"></i> Timeline</a><span class="selected"></span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw  fa-clock-o"></i> My Timeline</a>
+                        <a href="#"><i class="fa fa-fw  fa-clock-o toggled-off"></i> My Timeline</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-table"></i> Grid</a>
+                        <a href="#"><i class="fa fa-fw fa-table toggled-off"></i> Grid</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw  fa-users"></i> Customers</a>
+                        <a href="#"><i class="fa fa-fw  fa-users toggled-off"></i> Customers</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-line-chart"></i> Report</a>
+                        <a href="#"><i class="fa fa-fw fa-line-chart toggled-off"></i> Report</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-wrench"></i> Tools</a>
+                        <a href="#"><i class="fa fa-fw fa-wrench toggled-off"></i> Tools</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v toggled-off"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="#">Dropdown Item</a>
@@ -190,7 +189,6 @@
                     </li>
                   
                 </ul>
-            </div>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
@@ -248,13 +246,38 @@
     <!-- Morris Charts JavaScript -->
    
     <script type="text/javascript">
-       $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-       $("#side-navigation").children().toggleClass("toggled-off");
-       $("#wrapper").toggleClass("toggled-off");
-       $('.fa').toggleClass("toggled-off");
-       $('.selected').toggleClass("toggled-off");
-});
+        $(document).ready(function(){
+            var data = [{
+                id: 'dir-1',
+                name: 'Root',
+                type: 'dir',
+                children: [
+                    {
+                        id: 'dir-2',
+                        name: 'Sub_dir',
+                        type: 'dir',
+                        children: [{
+                            id: 'file-1',
+                            name: 'file-tree-master.zip',
+                            type: 'zip',
+                            url: '1.zip'
+                        }]
+                    },{
+                        id: 'file-2',
+                        name: 'File tree',
+                        type: 'zip',
+                        url: '2.zip'
+                    }
+                ]
+            }];
+
+            $('#file-tree').fileTree({
+                data: data,
+                sortable: false,
+                selectable: false
+            });
+
+        });
     </script>
     
     
