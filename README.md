@@ -1,4 +1,4 @@
-Altered and maintained by **Colby Rountree** (http://www.colbyrountree.com/).
+Created and maintained by **Colby Rountree** (http://www.colbyrountree.com/).
 
 * https://github.com/colbyrountree
 
