@@ -134,7 +134,7 @@
                     </ul>
                 </li> -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -156,7 +156,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse" >
                 <div id="side-navigation">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="home">
+                    <li class="home visible-lg-block">
                         <a href="#" id="menu-toggle"><i class="fa fa-fw fa-bars"></i> Toggle Meu</a></span>
                     </li>
                     <li class="active">
@@ -178,12 +178,12 @@
                         <a href="#"><i class="fa fa-fw fa-wrench"></i> Tools</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw  fa-sitemap"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#level2">Dropdown Item</a>
                             </li>
-                            <li>
+                            <li id="level2" class="collapse">
                                 <a href="#">Dropdown Item</a>
                             </li>
                         </ul>
@@ -201,7 +201,7 @@
 
                 <!-- Page Heading -->
                 <div class="row no-gutter">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                        
                         <ol class="breadcrumb">
                            <li>
@@ -211,6 +211,84 @@
                            Active
                             </li>
                         </ol>
+                    </div>
+                     <div class="col-lg-6 text-right"style="background-color:white">
+              
+                   
+                        
+                            <ul class="nav navbar-nav" >
+                           
+                               
+                                
+                                <li class="dropdown">
+                                    <a href="javascript:;" id="filter-menu" class="dropdown-toggle" data-toggle="dropdown"> Adjust View<b class="caret"></b></a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li class="dropdown-header">Filters</li>
+                                        <li><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Planning
+                                    </label>
+                                </div>
+                                        </li>
+                                        <li><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Produciton
+                                    </label>
+                                </div>
+                                        </li>
+                                        <li><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Active
+                                    </label>
+                                </div>
+                                        </li>
+                                         <li><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Complete
+                                    </label>
+                                </div>
+                                        </li>
+                                        </li>
+                                         <li><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Problem
+                                    </label>
+                                </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Grid</li>
+                                        <li><div class="form-group">
+                               
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">1
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                                </label>
+                            </div>
+                                        </li>
+                                        <li class="dropdown-header">Scale</li>
+                                        <li><div class="form-group">
+                               
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Day
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Month
+                                </label>
+                               
+                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                      
+                        <!--/.nav-collapse -->
+                   
+                
                     </div>
                 </div>
                 <!-- /.row -->
@@ -256,7 +334,11 @@
        $('.selected').toggleClass("toggled-off");
 });
     </script>
-    
+    <script type="text/javascript">
+$('.dropdown-menu input').click(function(e) {
+        e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
+    });
+</script>
     
 </body>
 
