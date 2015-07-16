@@ -1279,6 +1279,10 @@ h4,
 .h4 {
   font-size: 18px;
 }
+
+#wildcard h4 {
+    padding-top: 20px;
+}
 h5,
 .h5 {
   font-size: 14px;
@@ -2497,20 +2501,19 @@ fieldset {
 }
 legend {
   display: block;
-  width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 16px;
   line-height: inherit;
   color: #333;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
 }
 label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
+    color: dimgray;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2525,6 +2528,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+    margin-bottom: 10px;
 }
 input[type="range"] {
   display: block;
@@ -2565,6 +2569,7 @@ output {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 10px;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -4025,6 +4030,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
     border-top: 1px solid;
 }
+.nav-tabs > li {
+  position: relative;
+  display: block;
+    border-top: none !important;
+}
 .nav > li > a {
   position: relative;
   display: block;
@@ -4061,20 +4071,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px transparent;
+    background: #27a9e3;
 }
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-  margin-right: 2px;
+  margin-right: 1px;
   line-height: 1.42857143;
   border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0;
+  background-color:#e5f4f4;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eee #eee #ddd;
+  border-color: transparent;
+    background-color: azure;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4082,7 +4095,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555;
   cursor: default;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   border-bottom-color: transparent;
 }
 .nav-tabs.nav-justified {
@@ -4202,6 +4215,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .active {
   display: block;
+  padding: 20px;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4930,8 +4944,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
+  font-size: 50%;
+  font-weight: normal;
   line-height: 1;
   color: #fff;
   text-align: center;
