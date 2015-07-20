@@ -280,18 +280,21 @@
 				<div class="panel panel-default">
 					<div clss="row">
 						<ul class="nav nav-tabs" role="tablist">
-							<li><a href="#customer-info" role="tab" data-toggle="tab">Customer Info</a>
+                            
+							<li class="active"><a href="#customer-info" role="tab" data-toggle="tab">Customer Info</a>
 							</li>
-							<li class="active"><a href="#customer-billing" role="tab" data-toggle="tab">Customer Billing</a>
+							<li><a href="#customer-billing" role="tab" data-toggle="tab">Customer Billing</a>
 							</li>
 							<li><a href="#staff" role="tab" data-toggle="tab">Staff</a>
 							</li>
 							<li><a href="#wildcard" role="tab" data-toggle="tab">Wildcard</a>
 							</li>
+                            <li><a href="#tracking" role="tab" data-toggle="tab">Tracking</a>
+							</li>
 						</ul>
 					</div>
 					<div class="tab-content">
-						<div class="tab-pane active" id="customer-billing">
+						<div class="tab-pane" id="customer-billing">
 							<div class="row">
 								<div class="col-lg-12">
 									<fieldset>
@@ -300,11 +303,11 @@
 											<label>Name</label>
 											<input class="form-control" placeholder="Enter text">
 										</div>
-										<div class="col-lg-1 col-md-6">
+										<div class="col-lg-2 col-md-6">
 											<label>ID</label>
 											<input class="form-control" placeholder="Enter text">
 										</div>
-										<div class="col-lg-1">
+										<div class="col-lg-2">
 											<label>PS ID</label>
 											<input class="form-control" placeholder="Enter text">
 										</div>
@@ -315,7 +318,7 @@
 								<div class="col-lg-12">
 									<fieldset>
 										<legend>Addresses</legend>
-										<div class="col-lg-4">
+										<div class="col-lg-6">
 											<select multiple class="form-control">
 												<option>1</option>
 												<option>2</option>
@@ -330,14 +333,14 @@
 							<!-- Start Contact -->
 							<div class="row">
 								<div class="col-lg-12">
-									<fieldset>
+									<fieldset><legend>Billing Information</legend>
 										<div class="col-lg-12">
 											<div class="row">
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>First Name</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>Last Name</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -349,7 +352,7 @@
 													<label>Address 1</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>Phone</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -361,7 +364,7 @@
 													<label>Address 2</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>Fax</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -373,7 +376,7 @@
 													<label>City</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>Email</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -381,7 +384,7 @@
 										</div>
 										<div class="col-lg-12">
 											<div class="row">
-												<div class="col-lg-2">
+												<div class="col-lg-3">
 													<label>State</label>
 													<select class="form-control">
 														<option>1</option>
@@ -391,7 +394,7 @@
 														<option>5</option>
 													</select>
 												</div>
-												<div class="col-lg-1">
+												<div class="col-lg-3">
 													<label>Zip</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -401,10 +404,10 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-12">
+								<div class="col-lg-12 col-sm-12">
 									<fieldset>
 										<legend>Pay</legend>
-										<div class="col-lg-2 col-md-6">
+										<div class="col-lg-2 col-sm-6">
 											<label>Debit Group</label>
 											<select class="form-control">
 												<option>1</option>
@@ -414,7 +417,7 @@
 												<option>5</option>
 											</select>
 										</div>
-										<div class="col-lg-2 col-md-6">
+										<div class="col-lg-3 col-md-6">
 											<label>CC Customer ID</label>
 											<input class="form-control" placeholder="Enter text">
 										</div>
@@ -430,7 +433,7 @@
 														<option>5</option>
 													</select>
 												</div>
-												<div class="col-lg-2 col-md-6">
+												<div class="col-lg-3 col-md-6">
 													<label>Enter CC Payment</label>
 													<input class="form-control" placeholder="Enter text">
 												</div>
@@ -443,7 +446,7 @@
 						<!--end contact-->
 						<div class="tab-pane" id="staff">
 							<div class="row">
-								<div class="col-lg-3">
+								<div class="col-lg-4">
 									<fieldset>
 										<legend>Staff Member</legend>
 										<label>Photo</label>
@@ -454,7 +457,7 @@
 										<input class="form-control" placeholder="Enter text">
 									</fieldset>
 								</div>
-								<div class="col-lg-3">
+								<div class="col-lg-4">
 									<fieldset>
 										<legend>Staff Member</legend>
 										<label>Photo</label>
@@ -467,7 +470,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-3">
+								<div class="col-lg-4">
 									<fieldset>
 										<legend>Staff Member</legend>
 										<label>Photo</label>
@@ -478,7 +481,7 @@
 										<input class="form-control" placeholder="Enter text">
 									</fieldset>
 								</div>
-								<div class="col-lg-3">
+								<div class="col-lg-4">
 									<fieldset>
 										<legend>Staff Member</legend>
 										<label>Photo</label>
@@ -494,155 +497,557 @@
 						<div class="tab-pane" id="wildcard">
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>1</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
-										<h4>1</h4>
+									<div class="col-lg-1 text-right">
+										<h4>2</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>3</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>4</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>5</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>6</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>7</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>8</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>9</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-3">
-									<div class="col-lg-1">
+									<div class="col-lg-1 text-right">
 										<h4>10</h4>
 									</div>
-									<div class="col-lg-10">
+									<div class="col-lg-11">
 										<label>Name</label>
 										<input class="form-control" placeholder="Enter text">
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<label>Value</label>
 									<input class="form-control" placeholder="Enter text">
 								</div>
 							</div>
 						</div>
+                        <!-- new tab -->
+                        <div class="tab-pane active" id="customer-info">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <fieldset><legend>Name / Hierachy</legend>
+                                      <div class="col-lg-12">
+										<label>Name</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>R1</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>R2</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>R3</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>R4</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>R5</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    </fieldset>
+                                  
+                                </div>
+                                             <div class="col-lg-4">
+                                    <fieldset><legend>Addresses</legend>
+                                      <div class="col-lg-12">
+										<label>Address 1</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Address 2</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>City</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    
+                                      <div class="col-lg-6">
+										<label>State</label>
+<select class="form-control">
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>											</div>
+                                        
+                                          <div class="col-lg-6">
+										<label>Zipcode</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                       
+                                      <div class="col-lg-6">
+										<label>Lattitude</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                           <div class="col-lg-6">
+										<label>Longitude</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                            
+                                        <div class="col-lg-12 text-center">
+                                            <a href="#" class="btn btn-block btn-primary">Get Location</a>
+                                        </div>
+                                    </fieldset>
+                                  
+                                </div>
+                                <div class="col-lg-4">
+                                    <fieldset><legend>Comunication</legend>
+                                      <div class="col-lg-12">
+										<label>Phone</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Fax</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Office Email</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Website</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>? Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                   
+                                    </fieldset>
+                                  
+                                </div> </div>
+                            <div class="row">
+                                        <div class="col-lg-6">
+                                    <fieldset><legend>Contact 1</legend>
+                                      <div class="col-lg-12">
+										<label>Phone</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Fax</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Office Email</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Website</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>? Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset><legend>Contact 2</legend>
+                                      <div class="col-lg-12">
+										<label>Phone</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Fax</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Office Email</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Website</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>? Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset><legend>Contact 3</legend>
+                                      <div class="col-lg-12">
+										<label>Phone</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Fax</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Office Email</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Website</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>? Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset><legend>Contact 4</legend>
+                                      <div class="col-lg-12">
+										<label>Phone</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Fax</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Office Email</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Website</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>? Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                            </div>
+                            </div>
+                      
+                        <!--end tab -->
+                        <!--start tracking tab-->
+  <div class="tab-pane" id="tracking">
+                            <div class="row">
+                                 <div class="col-lg-4">
+                                    <fieldset><legend>Tracking #1</legend>
+                                      <div class="col-lg-12">
+										<label>Vendor</label>
+                                          <select class="form-control" placeholder="Enter text">
+                                          	<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+                                              </select>
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Number</label>
+										<input type="text" class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Destination Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Current Campaign</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                                 <div class="col-lg-4">
+                                    <fieldset><legend>Tracking #2</legend>
+                                      <div class="col-lg-12">
+										<label>Vendor</label>
+                                          <select class="form-control" placeholder="Enter text">
+                                          	<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+                                              </select>
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Number</label>
+										<input type="text" class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Destination Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Current Campaign</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    
+                                   
+                                    </fieldset>
+                                  
+                                </div></div>
+      <div class="row">
+                                 <div class="col-lg-4">
+                                    <fieldset><legend>Tracking #3</legend>
+                                      <div class="col-lg-12">
+										<label>Vendor</label>
+                                          <select class="form-control" placeholder="Enter text">
+                                          	<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+                                              </select>
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Number</label>
+										<input type="text" class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Destination Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Current Campaign</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+                                 <div class="col-lg-4">
+                                    <fieldset><legend>Tracking #4</legend>
+                                      <div class="col-lg-12">
+										<label>Vendor</label>
+                                          <select class="form-control" placeholder="Enter text">
+                                          	<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+                                              </select>
+									</div>
+                               
+                                      <div class="col-lg-12">
+										<label>Number</label>
+										<input type="text" class="form-control" placeholder="Enter text">
+									</div>
+                                  
+                                      <div class="col-lg-12">
+										<label>Destination Number</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                      <div class="col-lg-12">
+										<label>Current Campaign</label>
+										<input class="form-control" placeholder="Enter text">
+									</div>
+                                    
+                                   
+                                    </fieldset>
+                                  
+                                </div>
+      </div>
+                        </div>
 					</div>
 				</div>
 				<!-- /.container-fluid -->
