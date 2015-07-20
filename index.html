@@ -1,1080 +1,1150 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<title>Darwill</title>
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="css/style.css" rel="stylesheet">
-		<!-- File Tree -->
-		<link href="dist/css/file-tree.min.css" s>
-		<!-- Custom Fonts -->
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div id="wrapper">
-		<!-- Navigation -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">darwill</a>
-			</div>
-			<!-- Top Menu Items -->
-			<ul class="nav navbar-right top-nav">
-				<!--  <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-					<ul class="dropdown-menu message-dropdown">
-					    <li class="message-preview">
-					        <a href="#">
-					            <div class="media">
-					                <span class="pull-left">
-					                    <img class="media-object" src="http://placehold.it/50x50" alt="">
-					                </span>
-					                <div class="media-body">
-					                    <h5 class="media-heading"><strong>John Smith</strong>
-					                    </h5>
-					                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-					                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-					                </div>
-					            </div>
-					        </a>
-					    </li>
-					    <li class="message-preview">
-					        <a href="#">
-					            <div class="media">
-					                <span class="pull-left">
-					                    <img class="media-object" src="http://placehold.it/50x50" alt="">
-					                </span>
-					                <div class="media-body">
-					                    <h5 class="media-heading"><strong>John Smith</strong>
-					                    </h5>
-					                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-					                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-					                </div>
-					            </div>
-					        </a>
-					    </li>
-					    <li class="message-preview">
-					        <a href="#">
-					            <div class="media">
-					                <span class="pull-left">
-					                    <img class="media-object" src="http://placehold.it/50x50" alt="">
-					                </span>
-					                <div class="media-body">
-					                    <h5 class="media-heading"><strong>John Smith</strong>
-					                    </h5>
-					                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-					                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-					                </div>
-					            </div>
-					        </a>
-					    </li>
-					    <li class="message-footer">
-					        <a href="#">Read All New Messages</a>
-					    </li>
-					</ul>
-					</li>
-					<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-					<ul class="dropdown-menu alert-dropdown">
-					    <li>
-					        <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-					    </li>
-					    <li>
-					        <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-					    </li>
-					    <li>
-					        <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-					    </li>
-					    <li>
-					        <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-					    </li>
-					    <li>
-					        <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-					    </li>
-					    <li>
-					        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-					    </li>
-					    <li class="divider"></li>
-					    <li>
-					        <a href="#">View All</a>
-					    </li>
-					</ul>
-					</li> -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<div id="side-navigation">
-					<ul class="nav navbar-nav side-nav">
-						<li class="home visible-lg-block">
-							<a href="#" id="menu-toggle"><i class="fa fa-fw fa-bars"></i> Toggle Meu</a>
-							</span>
-						</li>
-						<li class="active">
-							<a href="#"><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw  fa-clock-o"></i> My Timeline</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-table"></i> Grid</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw  fa-users"></i> Customers</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-line-chart"></i> Report</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-fw fa-wrench"></i> Tools</a>
-						</li>
-						<li>
-							<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw  fa-sitemap"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
-							<ul id="demo" class="collapse">
-								<li>
-									<a href="javascript:;" data-toggle="collapse" data-target="#level2">Dropdown Item</a>
-								</li>
-								<li id="level2" class="collapse">
-									<a href="#">Dropdown Item</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- /.navbar-collapse -->
-		</nav>
-		<div id="page-wrapper">
-			<div class="container-fluid">
-				<!-- Page Heading -->
-				<div class="row no-gutter">
-					<div class="col-lg-6">
-						<ol class="breadcrumb">
-							<li>
-								<i class="fa fa-dashboard"></i> <a href="index.html">Timeline</a>
-							</li>
-							<li class="active">
-								Active
-							</li>
-						</ol>
-					</div>
-					<div class="col-lg-6 text-right" style="background-color:white">
-						<ul class="nav navbar-nav">
-							<li class="dropdown">
-								<a href="javascript:;" id="filter-menu" class="dropdown-toggle" data-toggle="dropdown"> Adjust View<b class="caret"></b></a>
-								<ul class="dropdown-menu pull-right">
-									<li class="dropdown-header">Filters</li>
-									<li>
-										<div class="checkbox">
-											<label>
-											<input type="checkbox" value="">Planning
-											</label>
-										</div>
-									</li>
-									<li>
-										<div class="checkbox">
-											<label>
-											<input type="checkbox" value="">Produciton
-											</label>
-										</div>
-									</li>
-									<li>
-										<div class="checkbox">
-											<label>
-											<input type="checkbox" value="">Active
-											</label>
-										</div>
-									</li>
-									<li>
-										<div class="checkbox">
-											<label>
-											<input type="checkbox" value="">Complete
-											</label>
-										</div>
-									</li>
-									</li>
-									<li>
-										<div class="checkbox">
-											<label>
-											<input type="checkbox" value="">Problem
-											</label>
-										</div>
-									</li>
-									<li class="divider"></li>
-									<li class="dropdown-header">Grid</li>
-									<li>
-										<div class="form-group">
-											<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">1
-											</label>
-											<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
-											</label>
-											<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
-											</label>
-										</div>
-									</li>
-									<li class="dropdown-header">Scale</li>
-									<li>
-										<div class="form-group">
-											<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Day
-											</label>
-											<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Month
-											</label>
-										</div>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<!--/.nav-collapse -->
-					</div>
-				</div>
-				<!-- /.row -->
-				<!-- /.row -->
-				<div class="row">
-					<div class="col-lg-12">
-						<div id="#file-tree"></div>
-					</div>
-				</div>
-				<!-- /.row -->
-				<!-- /.row -->
-				<div class="panel panel-default">
-					<div clss="row">
-						<ul class="nav nav-tabs" role="tablist">
-                            
-							<li class="active"><a href="#customer-info" role="tab" data-toggle="tab">Customer Info</a>
-							</li>
-							<li><a href="#customer-billing" role="tab" data-toggle="tab">Customer Billing</a>
-							</li>
-							<li><a href="#staff" role="tab" data-toggle="tab">Staff</a>
-							</li>
-							<li><a href="#wildcard" role="tab" data-toggle="tab">Wildcard</a>
-							</li>
-                            <li><a href="#tracking" role="tab" data-toggle="tab">Tracking</a>
-							</li>
-						</ul>
-					</div>
-					<div class="tab-content">
-						<div class="tab-pane" id="customer-billing">
-							<div class="row">
-								<div class="col-lg-12">
-									<fieldset>
-										<legend>Name</legend>
-										<div class="col-lg-4 col-md-6">
-											<label>Name</label>
-											<input class="form-control" placeholder="Enter text">
-										</div>
-										<div class="col-lg-2 col-md-6">
-											<label>ID</label>
-											<input class="form-control" placeholder="Enter text">
-										</div>
-										<div class="col-lg-2">
-											<label>PS ID</label>
-											<input class="form-control" placeholder="Enter text">
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<fieldset>
-										<legend>Addresses</legend>
-										<div class="col-lg-6">
-											<select multiple class="form-control">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<!-- Start Contact -->
-							<div class="row">
-								<div class="col-lg-12">
-									<fieldset><legend>Billing Information</legend>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-3">
-													<label>First Name</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-												<div class="col-lg-3">
-													<label>Last Name</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-3">
-													<label>Address 1</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-												<div class="col-lg-3">
-													<label>Phone</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-3">
-													<label>Address 2</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-												<div class="col-lg-3">
-													<label>Fax</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-3">
-													<label>City</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-												<div class="col-lg-3">
-													<label>Email</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-3">
-													<label>State</label>
-													<select class="form-control">
-														<option>1</option>
-														<option>2</option>
-														<option>3</option>
-														<option>4</option>
-														<option>5</option>
-													</select>
-												</div>
-												<div class="col-lg-3">
-													<label>Zip</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12 col-sm-12">
-									<fieldset>
-										<legend>Pay</legend>
-										<div class="col-lg-2 col-sm-6">
-											<label>Debit Group</label>
-											<select class="form-control">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
-										</div>
-										<div class="col-lg-3 col-md-6">
-											<label>CC Customer ID</label>
-											<input class="form-control" placeholder="Enter text">
-										</div>
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-2 col-md-6">
-													<label>Debit Group</label>
-													<select class="form-control">
-														<option>1</option>
-														<option>2</option>
-														<option>3</option>
-														<option>4</option>
-														<option>5</option>
-													</select>
-												</div>
-												<div class="col-lg-3 col-md-6">
-													<label>Enter CC Payment</label>
-													<input class="form-control" placeholder="Enter text">
-												</div>
-											</div>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-						</div>
-						<!--end contact-->
-						<div class="tab-pane" id="staff">
-							<div class="row">
-								<div class="col-lg-4">
-									<fieldset>
-										<legend>Staff Member</legend>
-										<label>Photo</label>
-										<input type="file">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-										<label>Title</label>
-										<input class="form-control" placeholder="Enter text">
-									</fieldset>
-								</div>
-								<div class="col-lg-4">
-									<fieldset>
-										<legend>Staff Member</legend>
-										<label>Photo</label>
-										<input type="file">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-										<label>Title</label>
-										<input class="form-control" placeholder="Enter text">
-									</fieldset>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-4">
-									<fieldset>
-										<legend>Staff Member</legend>
-										<label>Photo</label>
-										<input type="file">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-										<label>Title</label>
-										<input class="form-control" placeholder="Enter text">
-									</fieldset>
-								</div>
-								<div class="col-lg-4">
-									<fieldset>
-										<legend>Staff Member</legend>
-										<label>Photo</label>
-										<input type="file">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-										<label>Title</label>
-										<input class="form-control" placeholder="Enter text">
-									</fieldset>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane" id="wildcard">
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>1</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>2</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>3</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>4</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>5</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>6</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>7</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>8</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>9</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="col-lg-1 text-right">
-										<h4>10</h4>
-									</div>
-									<div class="col-lg-11">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<label>Value</label>
-									<input class="form-control" placeholder="Enter text">
-								</div>
-							</div>
-						</div>
-                        <!-- new tab -->
-                        <div class="tab-pane active" id="customer-info">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <fieldset><legend>Name / Hierachy</legend>
-                                      <div class="col-lg-12">
-										<label>Name</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>R1</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>R2</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>R3</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>R4</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>R5</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    </fieldset>
-                                  
-                                </div>
-                                             <div class="col-lg-4">
-                                    <fieldset><legend>Addresses</legend>
-                                      <div class="col-lg-12">
-										<label>Address 1</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Address 2</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>City</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    
-                                      <div class="col-lg-6">
-										<label>State</label>
-<select class="form-control">
-	<option value="AL">Alabama</option>
-	<option value="AK">Alaska</option>
-	<option value="AZ">Arizona</option>
-	<option value="AR">Arkansas</option>
-	<option value="CA">California</option>
-	<option value="CO">Colorado</option>
-	<option value="CT">Connecticut</option>
-	<option value="DE">Delaware</option>
-	<option value="DC">District Of Columbia</option>
-	<option value="FL">Florida</option>
-	<option value="GA">Georgia</option>
-	<option value="HI">Hawaii</option>
-	<option value="ID">Idaho</option>
-	<option value="IL">Illinois</option>
-	<option value="IN">Indiana</option>
-	<option value="IA">Iowa</option>
-	<option value="KS">Kansas</option>
-	<option value="KY">Kentucky</option>
-	<option value="LA">Louisiana</option>
-	<option value="ME">Maine</option>
-	<option value="MD">Maryland</option>
-	<option value="MA">Massachusetts</option>
-	<option value="MI">Michigan</option>
-	<option value="MN">Minnesota</option>
-	<option value="MS">Mississippi</option>
-	<option value="MO">Missouri</option>
-	<option value="MT">Montana</option>
-	<option value="NE">Nebraska</option>
-	<option value="NV">Nevada</option>
-	<option value="NH">New Hampshire</option>
-	<option value="NJ">New Jersey</option>
-	<option value="NM">New Mexico</option>
-	<option value="NY">New York</option>
-	<option value="NC">North Carolina</option>
-	<option value="ND">North Dakota</option>
-	<option value="OH">Ohio</option>
-	<option value="OK">Oklahoma</option>
-	<option value="OR">Oregon</option>
-	<option value="PA">Pennsylvania</option>
-	<option value="RI">Rhode Island</option>
-	<option value="SC">South Carolina</option>
-	<option value="SD">South Dakota</option>
-	<option value="TN">Tennessee</option>
-	<option value="TX">Texas</option>
-	<option value="UT">Utah</option>
-	<option value="VT">Vermont</option>
-	<option value="VA">Virginia</option>
-	<option value="WA">Washington</option>
-	<option value="WV">West Virginia</option>
-	<option value="WI">Wisconsin</option>
-	<option value="WY">Wyoming</option>
-</select>											</div>
-                                        
-                                          <div class="col-lg-6">
-										<label>Zipcode</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                       
-                                      <div class="col-lg-6">
-										<label>Lattitude</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                           <div class="col-lg-6">
-										<label>Longitude</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                            
-                                        <div class="col-lg-12 text-center">
-                                            <a href="#" class="btn btn-block btn-primary">Get Location</a>
-                                        </div>
-                                    </fieldset>
-                                  
-                                </div>
-                                <div class="col-lg-4">
-                                    <fieldset><legend>Comunication</legend>
-                                      <div class="col-lg-12">
-										<label>Phone</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Fax</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Office Email</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Website</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>? Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                   
-                                    </fieldset>
-                                  
-                                </div> </div>
-                            <div class="row">
-                                        <div class="col-lg-6">
-                                    <fieldset><legend>Contact 1</legend>
-                                      <div class="col-lg-12">
-										<label>Phone</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Fax</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Office Email</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Website</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>? Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset><legend>Contact 2</legend>
-                                      <div class="col-lg-12">
-										<label>Phone</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Fax</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Office Email</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Website</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>? Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset><legend>Contact 3</legend>
-                                      <div class="col-lg-12">
-										<label>Phone</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Fax</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Office Email</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Website</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>? Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset><legend>Contact 4</legend>
-                                      <div class="col-lg-12">
-										<label>Phone</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Fax</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Office Email</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Website</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>? Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                            </div>
-                            </div>
-                      
-                        <!--end tab -->
-                        <!--start tracking tab-->
-  <div class="tab-pane" id="tracking">
-                            <div class="row">
-                                 <div class="col-lg-4">
-                                    <fieldset><legend>Tracking #1</legend>
-                                      <div class="col-lg-12">
-										<label>Vendor</label>
-                                          <select class="form-control" placeholder="Enter text">
-                                          	<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-                                              </select>
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Number</label>
-										<input type="text" class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Destination Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Current Campaign</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                                 <div class="col-lg-4">
-                                    <fieldset><legend>Tracking #2</legend>
-                                      <div class="col-lg-12">
-										<label>Vendor</label>
-                                          <select class="form-control" placeholder="Enter text">
-                                          	<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-                                              </select>
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Number</label>
-										<input type="text" class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Destination Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Current Campaign</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    
-                                   
-                                    </fieldset>
-                                  
-                                </div></div>
-      <div class="row">
-                                 <div class="col-lg-4">
-                                    <fieldset><legend>Tracking #3</legend>
-                                      <div class="col-lg-12">
-										<label>Vendor</label>
-                                          <select class="form-control" placeholder="Enter text">
-                                          	<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-                                              </select>
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Number</label>
-										<input type="text" class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Destination Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Current Campaign</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-                                 <div class="col-lg-4">
-                                    <fieldset><legend>Tracking #4</legend>
-                                      <div class="col-lg-12">
-										<label>Vendor</label>
-                                          <select class="form-control" placeholder="Enter text">
-                                          	<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-                                              </select>
-									</div>
-                               
-                                      <div class="col-lg-12">
-										<label>Number</label>
-										<input type="text" class="form-control" placeholder="Enter text">
-									</div>
-                                  
-                                      <div class="col-lg-12">
-										<label>Destination Number</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                      <div class="col-lg-12">
-										<label>Current Campaign</label>
-										<input class="form-control" placeholder="Enter text">
-									</div>
-                                    
-                                   
-                                    </fieldset>
-                                  
-                                </div>
-      </div>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Darwill</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- File Tree -->
+      <link href="dist/css/file-tree.min.css" s>
+      <!-- Custom Fonts -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div id="wrapper">
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">darwill</a>
+         </div>
+         <!-- Top Menu Items -->
+         <ul class="nav navbar-right top-nav">
+            <!--  <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+               <ul class="dropdown-menu message-dropdown">
+                   <li class="message-preview">
+                       <a href="#">
+                           <div class="media">
+                               <span class="pull-left">
+                                   <img class="media-object" src="http://placehold.it/50x50" alt="">
+                               </span>
+                               <div class="media-body">
+                                   <h5 class="media-heading"><strong>John Smith</strong>
+                                   </h5>
+                                   <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                   <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                               </div>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="message-preview">
+                       <a href="#">
+                           <div class="media">
+                               <span class="pull-left">
+                                   <img class="media-object" src="http://placehold.it/50x50" alt="">
+                               </span>
+                               <div class="media-body">
+                                   <h5 class="media-heading"><strong>John Smith</strong>
+                                   </h5>
+                                   <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                   <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                               </div>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="message-preview">
+                       <a href="#">
+                           <div class="media">
+                               <span class="pull-left">
+                                   <img class="media-object" src="http://placehold.it/50x50" alt="">
+                               </span>
+                               <div class="media-body">
+                                   <h5 class="media-heading"><strong>John Smith</strong>
+                                   </h5>
+                                   <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                   <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                               </div>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="message-footer">
+                       <a href="#">Read All New Messages</a>
+                   </li>
+               </ul>
+               </li>
+               <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+               <ul class="dropdown-menu alert-dropdown">
+                   <li>
+                       <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                   </li>
+                   <li>
+                       <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                   </li>
+                   <li>
+                       <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                   </li>
+                   <li>
+                       <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                   </li>
+                   <li>
+                       <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                   </li>
+                   <li>
+                       <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                   </li>
+                   <li class="divider"></li>
+                   <li>
+                       <a href="#">View All</a>
+                   </li>
+               </ul>
+               </li> -->
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div id="side-navigation">
+               <ul class="nav navbar-nav side-nav">
+                  <li class="home visible-lg-block">
+                     <a href="#" id="menu-toggle"><i class="fa fa-fw fa-bars"></i> Toggle Meu</a>
+                     </span>
+                  </li>
+                  <li class="active">
+                     <a href="#"><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw  fa-clock-o"></i> My Timeline</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-table"></i> Grid</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw  fa-users"></i> Customers</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-line-chart"></i> Report</a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-fw fa-wrench"></i> Tools</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw  fa-sitemap"></i> File Tree    <i class="fa fa-fw fa-caret-down"></i></a>
+                     <ul id="demo" class="collapse">
+                        <li>
+                           <a href="javascript:;" data-toggle="collapse" data-target="#level2">Dropdown Item</a>
+                        </li>
+                        <li id="level2" class="collapse">
+                           <a href="#">Dropdown Item</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- /.navbar-collapse -->
+      </nav>
+      <div id="page-wrapper">
+      <div class="container-fluid">
+         <!-- Page Heading -->
+         <div class="row no-gutter">
+            <div class="col-lg-6">
+               <ol class="breadcrumb">
+                  <li>
+                     <i class="fa fa-dashboard"></i> <a href="index.html">Timeline</a>
+                  </li>
+                  <li class="active">
+                     Active
+                  </li>
+               </ol>
+            </div>
+            <div class="col-lg-6 text-right" style="background-color:white">
+               <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                     <a href="javascript:;" id="filter-menu" class="dropdown-toggle" data-toggle="dropdown"> Adjust View<b class="caret"></b></a>
+                     <ul class="dropdown-menu pull-right">
+                        <li class="dropdown-header">Filters</li>
+                        <li>
+                           <div class="checkbox">
+                              <label>
+                              <input type="checkbox" value="">Planning
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="checkbox">
+                              <label>
+                              <input type="checkbox" value="">Produciton
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="checkbox">
+                              <label>
+                              <input type="checkbox" value="">Active
+                              </label>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="checkbox">
+                              <label>
+                              <input type="checkbox" value="">Complete
+                              </label>
+                           </div>
+                        </li>
+                        </li>
+                        <li>
+                           <div class="checkbox">
+                              <label>
+                              <input type="checkbox" value="">Problem
+                              </label>
+                           </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Grid</li>
+                        <li>
+                           <div class="form-group">
+                              <label class="radio-inline">
+                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">1
+                              </label>
+                              <label class="radio-inline">
+                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                              </label>
+                              <label class="radio-inline">
+                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                              </label>
+                           </div>
+                        </li>
+                        <li class="dropdown-header">Scale</li>
+                        <li>
+                           <div class="form-group">
+                              <label class="radio-inline">
+                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Day
+                              </label>
+                              <label class="radio-inline">
+                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Month
+                              </label>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <!--/.nav-collapse -->
+            </div>
+         </div>
+         <!-- /.row -->
+         <!-- /.row -->
+         <div class="row">
+            <div class="col-lg-12">
+               <div id="#file-tree"></div>
+            </div>
+         </div>
+         <!-- /.row -->
+         <!-- /.row -->
+         <div class="panel panel-default">
+            <div clss="row">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li class="active"><a href="#customer-info" role="tab" data-toggle="tab">Customer Info</a>
+                  </li>
+                  <li><a href="#customer-billing" role="tab" data-toggle="tab">Customer Billing</a>
+                  </li>
+                  <li><a href="#staff" role="tab" data-toggle="tab">Staff</a>
+                  </li>
+                  <li><a href="#wildcard" role="tab" data-toggle="tab">Wildcard</a>
+                  </li>
+                  <li><a href="#tracking" role="tab" data-toggle="tab">Tracking</a>
+                  </li>
+                  <li><a href="#location" role="tab" data-toggle="tab">Location</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="tab-content">
+               <div class="tab-pane" id="customer-billing">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <fieldset>
+                           <legend>Name</legend>
+                           <div class="col-lg-4 col-md-6">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-2 col-md-6">
+                              <label>ID</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-2">
+                              <label>PS ID</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <fieldset>
+                           <legend>Addresses</legend>
+                           <div class="col-lg-6">
+                              <select multiple class="form-control">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <!-- Start Contact -->
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <fieldset>
+                           <legend>Billing Information</legend>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <label>First Name</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <label>Last Name</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <label>Address 1</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <label>Phone</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <label>Address 2</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <label>Fax</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <label>City</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <label>Email</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <label>State</label>
+                                    <select class="form-control">
+                                       <option>1</option>
+                                       <option>2</option>
+                                       <option>3</option>
+                                       <option>4</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <label>Zip</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 col-sm-12">
+                        <fieldset>
+                           <legend>Payment</legend>
+                           <div class="col-lg-2 col-sm-6">
+                              <label>Debit Group</label>
+                              <select class="form-control">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <label>CC Customer ID</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="row">
+                                 <div class="col-lg-2 col-md-6">
+                                    <label>Bill Type</label>
+                                    <select class="form-control">
+                                       <option>1</option>
+                                       <option>2</option>
+                                       <option>3</option>
+                                       <option>4</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <label>CC Payment Profile</label>
+                                    <input class="form-control" placeholder="Enter text">
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+               </div>
+               <!--end contact-->
+               <div class="tab-pane" id="staff">
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Staff Member</legend>
+                           <label>Photo</label>
+                           <input type="file">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                           <label>Title</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Staff Member</legend>
+                           <label>Photo</label>
+                           <input type="file">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                           <label>Title</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Staff Member</legend>
+                           <label>Photo</label>
+                           <input type="file">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                           <label>Title</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Staff Member</legend>
+                           <label>Photo</label>
+                           <input type="file">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                           <label>Title</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </fieldset>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane" id="wildcard">
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>1</h4>
                         </div>
-					</div>
-				</div>
-				<!-- /.container-fluid -->
-			</div>
-			<!-- /#page-wrapper -->
-		</div>
-		<!-- /#wrapper -->
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-		<script src="dist/js/file-tree.min.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<!-- Morris Charts JavaScript -->
-		<script type="text/javascript">
-			$("#menu-toggle").click(function(e) {
-			    e.preventDefault();
-			    $("#side-navigation").children().toggleClass("toggled-off");
-			    $("#wrapper").toggleClass("toggled-off");
-			    $('.fa').toggleClass("toggled-off");
-			    $('.selected').toggleClass("toggled-off");
-			});
-		</script>
-		<script type="text/javascript">
-			$('.dropdown-menu input').click(function(e) {
-			    e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
-			});
-		</script>
-	</body>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>2</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>3</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>4</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>5</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>6</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>7</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>8</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>9</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="col-lg-2 text-right">
+                           <h4>10</h4>
+                        </div>
+                        <div class="col-lg-10">
+                           <label>Name</label>
+                           <input class="form-control" placeholder="Enter text">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <label>Value</label>
+                        <input class="form-control" placeholder="Enter text">
+                     </div>
+                  </div>
+               </div>
+               <!-- new tab -->
+               <div class="tab-pane active" id="customer-info">
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Name / Hierachy</legend>
+                           <div class="col-lg-12">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>R1</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>R3</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>R3</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>R4</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>R5</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Addresses</legend>
+                           <div class="col-lg-12">
+                              <label>Address 1</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Address 2</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>City</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>State</label>
+                              <select class="form-control">
+                                 <option value="AL">Alabama</option>
+                                 <option value="AK">Alaska</option>
+                                 <option value="AZ">Arizona</option>
+                                 <option value="AR">Arkansas</option>
+                                 <option value="CA">California</option>
+                                 <option value="CO">Colorado</option>
+                                 <option value="CT">Connecticut</option>
+                                 <option value="DE">Delaware</option>
+                                 <option value="DC">District Of Columbia</option>
+                                 <option value="FL">Florida</option>
+                                 <option value="GA">Georgia</option>
+                                 <option value="HI">Hawaii</option>
+                                 <option value="ID">Idaho</option>
+                                 <option value="IL">Illinois</option>
+                                 <option value="IN">Indiana</option>
+                                 <option value="IA">Iowa</option>
+                                 <option value="KS">Kansas</option>
+                                 <option value="KY">Kentucky</option>
+                                 <option value="LA">Louisiana</option>
+                                 <option value="ME">Maine</option>
+                                 <option value="MD">Maryland</option>
+                                 <option value="MA">Massachusetts</option>
+                                 <option value="MI">Michigan</option>
+                                 <option value="MN">Minnesota</option>
+                                 <option value="MS">Mississippi</option>
+                                 <option value="MO">Missouri</option>
+                                 <option value="MT">Montana</option>
+                                 <option value="NE">Nebraska</option>
+                                 <option value="NV">Nevada</option>
+                                 <option value="NH">New Hampshire</option>
+                                 <option value="NJ">New Jersey</option>
+                                 <option value="NM">New Mexico</option>
+                                 <option value="NY">New York</option>
+                                 <option value="NC">North Carolina</option>
+                                 <option value="ND">North Dakota</option>
+                                 <option value="OH">Ohio</option>
+                                 <option value="OK">Oklahoma</option>
+                                 <option value="OR">Oregon</option>
+                                 <option value="PA">Pennsylvania</option>
+                                 <option value="RI">Rhode Island</option>
+                                 <option value="SC">South Carolina</option>
+                                 <option value="SD">South Dakota</option>
+                                 <option value="TN">Tennessee</option>
+                                 <option value="TX">Texas</option>
+                                 <option value="UT">Utah</option>
+                                 <option value="VT">Vermont</option>
+                                 <option value="VA">Virginia</option>
+                                 <option value="WA">Washington</option>
+                                 <option value="WV">West Virginia</option>
+                                 <option value="WI">Wisconsin</option>
+                                 <option value="WY">Wyoming</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Zipcode</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Lattitude</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Longitude</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12 text-center">
+                              <a href="#" class="btn btn-block btn-primary">Get Lat/Long</a>
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Comunication</legend>
+                           <div class="col-lg-12">
+                              <label>Phone</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Fax</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Office Email</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Website</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>SAN Number</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <fieldset>
+                           <legend>Contact 1</legend>
+                           <div class="col-lg-6">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Phone</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Title</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Email</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-6">
+                        <fieldset>
+                           <legend>Contact 2</legend>
+                           <div class="col-lg-6">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Phone</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Title</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Email</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-6">
+                        <fieldset>
+                           <legend>Contact 3</legend>
+                           <div class="col-lg-6">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Phone</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Title</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Email</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-6">
+                        <fieldset>
+                           <legend>Contact 4</legend>
+                           <div class="col-lg-6">
+                              <label>Name</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Phone</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Title</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-6">
+                              <label>Email</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+               </div>
+               <!--end tab -->
+               <!--start tracking tab-->
+               <div class="tab-pane" id="tracking">
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Tracking #1</legend>
+                           <div class="col-lg-12">
+                              <label>Vendor</label>
+                              <select class="form-control" placeholder="Enter text">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Number</label>
+                              <input type="text" class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Destination Number</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Current Campaign</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Tracking #2</legend>
+                           <div class="col-lg-12">
+                              <label>Vendor</label>
+                              <select class="form-control" placeholder="Enter text">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Number</label>
+                              <input type="text" class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Destination Number</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Current Campaign</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Tracking #3</legend>
+                           <div class="col-lg-12">
+                              <label>Vendor</label>
+                              <select class="form-control" placeholder="Enter text">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Number</label>
+                              <input type="text" class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Destination Number</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Current Campaign</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-4">
+                        <fieldset>
+                           <legend>Tracking #4</legend>
+                           <div class="col-lg-12">
+                              <label>Vendor</label>
+                              <select class="form-control" placeholder="Enter text">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Number</label>
+                              <input type="text" class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Destination Number</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                           <div class="col-lg-12">
+                              <label>Current Campaign</label>
+                              <input class="form-control" placeholder="Enter text">
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+               </div>
+               <!--end ta -->
+               <div class="tab-pane" id="location">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <fieldset>
+                           <legend>Territory</legend>
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <label>Zipcodes</label>
+                                 <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-3"><label>ID</label><input type="text" class="form-control"></div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <label>Zipcodes</label>
+                                 <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-3"><label>ID</label><input type="text" class="form-control"></div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <label>Zipcodes</label>
+                                 <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-3"><label>ID</label><input type="text" class="form-control"></div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <label>Zipcodes</label>
+                                 <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-3"><label>ID</label><input type="text" class="form-control"></div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <label>Zipcodes</label>
+                                 <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-3"><label>ID</label><input type="text" class="form-control"></div>
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-lg-3">
+                        <fieldset>
+                           <legend>
+                           Radius
+                            </legend>
+                           <div class="row">
+                               <div class="col-lg-5 text-right">
+                                   <h4 class="rad"> 1 Mile Radius</h4>
+                               </div>
+                               <div class="col-lg-7">
+                               <label>ID</label><input type="text" class="form-control">
+                               </div>
+                           </div>
+                                <div class="row">
+                               <div class="col-lg-5 text-right">
+                                   <h4 class="rad"> 2 Mile Radius</h4>
+                               </div>
+                               <div class="col-lg-7">
+                               <label>ID</label><input type="text" class="form-control">
+                               </div>
+                           </div>
+                                <div class="row">
+                               <div class="col-lg-5 text-right">
+                                   <h4 class="rad"> 5 Mile Radius</h4>
+                               </div>
+                               <div class="col-lg-7">
+                               <label>ID</label><input type="text" class="form-control">
+                               </div>
+                           </div>
+                                <div class="row">
+                               <div class="col-lg-5 text-right">
+                                   <h4 class="rad"> 10 Mile Radius</h4>
+                               </div>
+                               <div class="col-lg-7">
+                               <label>ID</label><input type="text" class="form-control">
+                               </div>
+                           </div>
+                            <div class="row">
+                               <div class="col-lg-5 text-right">
+                                   <h4 class="rad"> 20 Mile Radius</h4>
+                               </div>
+                               <div class="col-lg-7">
+                               <label>ID</label><input type="text" class="form-control">
+                               </div>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.container-fluid -->
+         </div>
+         <!-- /#page-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+      <script src="dist/js/file-tree.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <!-- Morris Charts JavaScript -->
+      <script type="text/javascript">
+         $("#menu-toggle").click(function(e) {
+             e.preventDefault();
+             $("#side-navigation").children().toggleClass("toggled-off");
+             $("#wrapper").toggleClass("toggled-off");
+             $('.fa').toggleClass("toggled-off");
+             $('.selected').toggleClass("toggled-off");
+         });
+      </script>
+      <script type="text/javascript">
+         $('.dropdown-menu input').click(function(e) {
+             e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
+         });
+      </script>
+   </body>
 </html>
