@@ -2514,6 +2514,7 @@ label {
   margin-bottom: 5px;
   font-weight: normal;
     color: dimgray;
+    font-size: 12px;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
