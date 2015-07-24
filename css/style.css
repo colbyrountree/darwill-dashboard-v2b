@@ -47,7 +47,28 @@ fieldset {
     background-color: #f0f2f8;
 }
 
+.pdf-viewer {
+    overflow-y:scroll;
+    overflow-x: hidden;
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 10px;
+}
 
+.pdv-viwer img {
+    padding: 0;
+    margin: 0;
+}
+
+.approval {margin: 0 0 20px 0;
+}
+
+.email-date { margin-top: 20px;
+color: #fff;
+top: 17px;
+right:20px;
+    position: relative;
+}
 
 .huge {
     font-size: 50px;
@@ -62,7 +83,8 @@ fieldset {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 225px;
+        padding-left: 225px;}
+    #email-wrapper { padding-left: 0;
     }
     
     #wrapper.toggled-off {
