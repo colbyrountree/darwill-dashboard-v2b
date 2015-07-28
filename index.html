@@ -1122,7 +1122,7 @@
             </div>
             <!-- /#start-modals -->
             <div id="addMail" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                <div class="modal-dialog ">
 
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -1146,7 +1146,7 @@
                 </div>
             </div>
             <div id="addRadius" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
 
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -1176,34 +1176,38 @@
                                 <div class="col-lg-12">
                                     <fieldset>
                                         <legend>Targets</legend>
-                                        <div class="col-lg-8">
+                                        
                                             <div class="row">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="row">
-                                                <select multiple class="form-control">
+                                                <div class="col-lg-12">
+                                           <div class="form-group input-group">
+                                <input type="text" class="form-control" placeholder="Add Target">
+                                <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></span>
+                            </div>
+                                                </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-lg-12">
+                                              <label>Delete A Target</label>
+                                                <select multiple class="form-control delete-targets">
                                                     <option>Option One</option>
                                                     <option>Option Two</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="row">
-                                                <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Add</button>
-                                            </div>
-                                            <div class="row">
-                                                <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete</button>
+                                            <div class="col-lg-12">
+                                                <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete Selected Target</button>
                                             </div>
                                         </div>
-                                    </fieldset>
-                                    <div class="col-lg-12">
-                                        <label>Creative</label>
-                                        <select class="form-control text-left">
-                                            <option>Option One</option>
-                                            <option>Option Two</option>
-                                            <option>Option Three</option>
-                                        </select>
-                                    </div>
+                                    </fieldset></div></div>
+                        <div class="row">
+                             <div class="col-lg-12">
+                                 <label>Creative</label>
+                                 <div class="form-group input-group">
+                                <select class="form-control" />
+                                    <option>Option One</option>
+                                    <option>Option Two</option>
+                                    </select>
+                                <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                            </div>
                                 </div>
 
 

@@ -75,8 +75,13 @@ h4.rad {
     color: dimgray;
 }
 .radius-delete {
-    margin-top: 12px !important;
+    margin-top: 0px !important;
 }
+
+.delete-targets {
+    margin-bottom:0 !important;}
+
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 225px;
