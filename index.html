@@ -149,7 +149,7 @@
                             </span>
                         </li>
                         <li class="active">
-                            <a href="#" ><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
+                            <a href="#"><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-fw  fa-clock-o"></i> My Timeline</a>
@@ -1120,124 +1120,126 @@
                 </div>
                 <!-- /#page-wrapper -->
             </div>
-<!-- /#start-modals -->
-<div id="addMail" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- /#start-modals -->
+            <div id="addMail" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">What would you like to add to this campaign?</h4>
-      </div>
-      <div class="modal-body">
-       <select multiple="" class="form-control">
-                                    <option>Mail Piece</option>
-                                    <option>Radius Mail Piece</option>
-                                   
-                                </select>
-      </div>
-      <div class="modal-footer text-center">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button> 
-      </div>
-    </div>
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">What would you like to add to this campaign?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <select multiple="" class="form-control">
+                                <option>Mail Piece</option>
+                                <option>Radius Mail Piece</option>
 
-  </div>
-</div>
-<div id="addRadius" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+                            </select>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Add Radius Mailing</h4>
-      </div>
-      <div class="modal-body">
-            <div class="row">
+                </div>
+            </div>
+            <div id="addRadius" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Add Radius Mailing</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
                                 <div class="col-lg-4">
                                     <label>Pieces Remaining</label>
-                                                <input type="text" class="form-control" />
-                </div>
-                <div class="col-lg-4">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-4">
                                     <label>Prospects Per Target </label>
-                                                <select class="form-control" />
-                    <option>Option One</option>
-                    <option>Option Two</option>
-                    </select>
+                                    <select class="form-control" />
+                                    <option>Option One</option>
+                                    <option>Option Two</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label>In-Home Date </label>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <legend>Targets</legend>
+                                        <div class="col-lg-8">
+                                            <div class="row">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="row">
+                                                <select multiple class="form-control">
+                                                    <option>Option One</option>
+                                                    <option>Option Two</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Add</button>
+                                            </div>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="col-lg-12">
+                                        <label>Creative</label>
+                                        <select class="form-control text-left">
+                                            <option>Option One</option>
+                                            <option>Option Two</option>
+                                            <option>Option Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-          <div class="col-lg-4">
-              <label>In-Home Date </label>
-              <input type="date" class="form-control">
-          </div>
-          </div>
-        <div class="row">
-         <div class="col-lg-12">
-             <fieldset>
-             <legend>Targets</legend>
-                 <div class="col-lg-8">
-                     <div class="row">
-                     <input type="text" class="form-control">
-                     </div>
-                     <div class="row">
-                         <select multiple class="form-control">
-                         <option>Option One</option>
-                    <option>Option Two</option>
-                         </select>
-                     </div>
-                 </div>
-                 <div class="col-lg-4">
-                 <div class="row">
-                      <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Add</button>
-                     </div>
-                     <div class="row">
-                      <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete</button>
-                     </div>
-                 </div>
-             </fieldset>
-              <div class="col-lg-12">
-             <label>Creative</label>
-               <select class="form-control text-left">
-                         <option>Option One</option>
-                          <option>Option Two</option>
-                          <option>Option Three</option>
-                         </select>
-           </div>
-            </div>
-                 
+                <!-- /#wrapper -->
+                <!-- jQuery -->
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+                <script src="dist/js/file-tree.min.js"></script>
+                <!-- Bootstrap Core JavaScript -->
+                <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                <!-- Morris Charts JavaScript -->
+                <script type="text/javascript">
+                    $("#menu-toggle").click(function(e) {
+                        e.preventDefault();
+                        $("#side-navigation").children().toggleClass("toggled-off");
+                        $("#wrapper").toggleClass("toggled-off");
+                        $('.fa').toggleClass("toggled-off");
+                        $('.selected').toggleClass("toggled-off");
+                    });
 
-        </div>
-     <div class="modal-footer text-center">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button> 
-      </div>
-    </div>
+                </script>
+                <script type="text/javascript">
+                    $('.dropdown-menu input').click(function(e) {
+                        e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
+                    });
 
-  </div>
-</div>
-            <!-- /#wrapper -->
-            <!-- jQuery -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-            <script src="dist/js/file-tree.min.js"></script>
-            <!-- Bootstrap Core JavaScript -->
-            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-            <!-- Morris Charts JavaScript -->
-            <script type="text/javascript">
-                $("#menu-toggle").click(function(e) {
-                    e.preventDefault();
-                    $("#side-navigation").children().toggleClass("toggled-off");
-                    $("#wrapper").toggleClass("toggled-off");
-                    $('.fa').toggleClass("toggled-off");
-                    $('.selected').toggleClass("toggled-off");
-                });
-            </script>
-            <script type="text/javascript">
-                $('.dropdown-menu input').click(function(e) {
-                    e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
-                });
-            </script>
+                </script>
 </body>
 
 </html>
