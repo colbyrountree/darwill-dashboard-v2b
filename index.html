@@ -146,7 +146,6 @@
                     <ul class="nav navbar-nav side-nav">
                         <li class="home visible-lg-block">
                             <a href="#" id="menu-toggle"><i class="fa fa-fw fa-bars"></i> Toggle Meu</a>
-                            </span>
                         </li>
                         <li class="active">
                             <a href="#"><i class="fa fa-fw fa-dashboard"></i> Timeline</a><span class="selected"></span>
@@ -272,7 +271,7 @@
                 </div>
                 <!-- /.row -->
                 <!-- /.row -->
-               
+
                 <!-- /.row -->
                 <!-- /.row -->
                 <div class="panel panel-default">
@@ -1115,134 +1114,399 @@
                     <!-- /.container-fluid -->
                 </div>
                 <!-- /#page-wrapper -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#add-mail-piece">Add Mail Piece</button>
+
             </div>
-</div>
-</div>
-</div>
-            <!-- /#start-modals -->
-            <div id="addMail" class="modal fade" role="dialog">
-                <div class="modal-dialog ">
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">What would you like to add to this campaign?</h4>
+        </div>
+
+    </div>
+
+    <!-- /#start-modals -->
+    <div id="addMail" class="modal fade" role="dialog">
+        <div class="modal-dialog ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">What would you like to add to this campaign?</h4>
+                </div>
+                <div class="modal-body">
+                    <select multiple="" class="form-control">
+                        <option>Mail Piece</option>
+                        <option>Radius Mail Piece</option>
+
+                    </select>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="addRadius" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Radius Mailing</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label>Pieces Remaining</label>
+                            <input type="text" class="form-control" />
                         </div>
-                        <div class="modal-body">
-                            <select multiple="" class="form-control">
-                                <option>Mail Piece</option>
-                                <option>Radius Mail Piece</option>
-
+                        <div class="col-lg-4">
+                            <label>Prospects Per Target </label>
+                            <select class="form-control" />
+                            <option>Option One</option>
+                            <option>Option Two</option>
                             </select>
                         </div>
-                        <div class="modal-footer text-center">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                        <div class="col-lg-4">
+                            <label>In-Home Date </label>
+                            <input type="date" class="form-control">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <legend>Targets</legend>
 
-                </div>
-            </div>
-            <div id="addRadius" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add Radius Mailing</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control" placeholder="Add Target">
+                                            <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <label>Delete A Target</label>
+                                        <select multiple class="form-control delete-targets">
+                                            <option>Option One</option>
+                                            <option>Option Two</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete Selected Target</button>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <label>Pieces Remaining</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="col-lg-4">
-                                    <label>Prospects Per Target </label>
-                                    <select class="form-control" />
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-4">
-                                    <label>In-Home Date </label>
-                                    <input type="date" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <legend>Targets</legend>
-                                        
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                           <div class="form-group input-group">
-                                <input type="text" class="form-control" placeholder="Add Target">
-                                <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></span>
-                            </div>
-                                                </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-lg-12">
-                                              <label>Delete A Target</label>
-                                                <select multiple class="form-control delete-targets">
-                                                    <option>Option One</option>
-                                                    <option>Option Two</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <button type="button" class="btn btn-danger btn-block radius-delete" data-dismiss="modal">Delete Selected Target</button>
-                                            </div>
-                                        </div>
-                                    </fieldset></div></div>
-                        <div class="row">
-                             <div class="col-lg-12">
-                                 <label>Creative</label>
-                                 <div class="form-group input-group">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label>Creative</label>
+                            <div class="form-group input-group">
                                 <select class="form-control" />
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    </select>
+                                <option>Option One</option>
+                                <option>Option Two</option>
+                                </select>
                                 <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
                             </div>
-                                </div>
-
-
-                            </div>
-                            <div class="modal-footer text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-                            </div>
                         </div>
 
+
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
-                <!-- /#wrapper -->
-                <!-- jQuery -->
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-                <script src="dist/js/file-tree.min.js"></script>
-                <!-- Bootstrap Core JavaScript -->
-                <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-                <!-- Morris Charts JavaScript -->
-                <script type="text/javascript">
-                    $("#menu-toggle").click(function(e) {
-                        e.preventDefault();
-                        $("#side-navigation").children().toggleClass("toggled-off");
-                        $("#wrapper").toggleClass("toggled-off");
-                        $('.fa').toggleClass("toggled-off");
-                        $('.selected').toggleClass("toggled-off");
-                    });
 
-                </script>
-                <script type="text/javascript">
-                    $('.dropdown-menu input').click(function(e) {
-                        e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
-                    });
+            </div>
+        </div>
+    </div>
+    <div id="add-mail-piece" class="modal fade" role="dialog">
+        <div class="modal-dialog ">
 
-                </script>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add A Mail Piece</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Format</label>
+                            <select class="form-control">
+                                    <option>Mail Piece</option>
+                                    <option>Radius Mail Piece</option>
+                                </select>
+                        </div>
+                        <div class="col-md-6">
+<label>Content ID</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                    </div>
+                                 <div class="row">
+                        <div class="col-md-6">
+                            <label>Mail Class</label>
+                            <select class="form-control">
+                                    <option>Mail Piece</option>
+                                    <option>Radius Mail Piece</option>
+                                </select>
+                        </div>
+                        <div class="col-md-6">
+<label>Zipcodes (For Transit)   </label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                    </div>
+                    <fieldset>
+                        <legend>Task Times (Days)</legend>
+                      <div class="row">
+                        <div class="col-md-2">
+                            <label>Creative</label>
+                            <input type="number" class="form-control">
+                          </div>
+                        <div class="col-md-2">
+                            <label>List</label>
+                            <input type="number" class="form-control">
+                          </div>
+                           <div class="col-md-3">
+                            <label>Creative Proof</label>
+                            <input type="number" class="form-control">
+                          </div>
+                           <div class="col-md-2">
+                            <label>Programing</label>
+                            <input type="number" class="form-control">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Programing Proof</label>
+                            <input type="number" class="form-control">
+                          </div>
+                        
+                        </div>
+                    </fieldset>
+                     <fieldset>
+                        <legend>In Home</legend>
+                      <div class="row">
+                        <div class="col-md-3 inhome-date">
+                         
+                            <input type="checkbox" > <label>Specific Date <i class="fa fa-fw fa-arrow-right "></i></label>
+                            
+                          
+                          </div>
+                       <div class="col-md-4">
+                             <input type="date" class="form-control">     
+                          </div>
+                        </div>
+                         <div class="row">
+                        <div class="col-md-3 inhome-date">
+                         
+                            <input type="checkbox" > <label>ASAP<label>
+                            
+                          
+                          </div>
+                       
+                        </div>
+                    </fieldset>
+                              <fieldset>
+                        <legend>Dates</legend>
+                      <div class="row mail-piece-dates">
+                        <div class="col-md-4 mail-piece-dates">
+                         
+                            <h5>Creative</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                            <label>Start Date</label><input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                            <label>Duration</label><input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                   
+                </div>
+                                   <div class="row ">
+                        <div class="col-md-4 ">
+                         
+                            <h5>List</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                           <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                    
+                </div>
+                               <div class="row">
+                        <div class="col-md-4">
+                         
+                            <h5>Creative Proof</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                          <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                  
+                </div>
+                          <div class="row ">
+                        <div class="col-md-4">
+                         
+                            <h5>Programming</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                           <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                           <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                    
+                </div>
+                      <div class="row ">
+                        <div class="col-md-4">
+                         
+                            <h5>Programming Proof</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                   
+                </div>
+                  <div class="row">
+                        <div class="col-md-4">
+                         
+                            <h5>Release</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                           <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                           <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                  
+                </div>
+              <div class="row">
+                        <div class="col-md-4">
+                         
+                            <h5>Drop</h5>
+                            
+                          
+                          </div>
+                             <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                           <div class="col-md-3">
+                         
+                            <input type="text" class="form-control" disabled>
+                            
+                          
+                          </div>
+                       
+                    
+                    </fieldset>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRadius">Add</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="dist/js/file-tree.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script type="text/javascript">
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#side-navigation").children().toggleClass("toggled-off");
+            $("#wrapper").toggleClass("toggled-off");
+            $('.fa').toggleClass("toggled-off");
+            $('.selected').toggleClass("toggled-off");
+        });
+
+    </script>
+    <script type="text/javascript">
+        $('.dropdown-menu input').click(function(e) {
+            e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.
+        });
+
+    </script>
 </body>
 
 </html>

@@ -57,6 +57,20 @@ fieldset legend {
 .approval {
     margin: 0 0 20px 0;
 }
+.inhome-date {
+    margin-top: 4px;
+    padding: 0px 0px 0px 15px;
+}
+
+.inhome-date .fa-fw {
+   text-align: right;
+    float:right;
+}
+
+.mail-piece-dates h5 {
+    margin-top: 35px;
+}
+
 .email-date {
     margin-top: 20px;
     color: #fff;

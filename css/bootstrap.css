@@ -1279,13 +1279,15 @@ h3,
 h4,
 .h4 {
     font-size: 18px;
+    
 }
 #wildcard h4 {
     padding-top: 20px;
 }
 h5,
 .h5 {
-    font-size: 14px;
+    font-size: 18px;
+    color:dimgray;
 }
 h6,
 .h6 {
