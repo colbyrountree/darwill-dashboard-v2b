@@ -71,6 +71,10 @@ fieldset legend {
     margin-top: 35px;
 }
 
+.btn-calculate {
+    margin-top: 10px !important;
+}
+
 .email-date {
     margin-top: 20px;
     color: #fff;
@@ -296,4 +300,7 @@ ul.alert-dropdown {
 }
 .panel-yellow > a:hover {
     color: #df8a13;
+}
+.add-mail-piece {
+    padding:0;
 }
